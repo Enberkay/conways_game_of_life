@@ -4,6 +4,12 @@ This project is an implementation of Conway's Game of Life using Rust and Macroq
 
 Conway's Game of Life, created by John Horton Conway in 1970, is a classic example of a cellular automaton. It demonstrates how simple rules governing individual cells can lead to complex and sometimes unexpected emergent behaviors.
 
+Conway's Game of Life ถูกคิดค้นโดย John Horton Conway นักคณิตศาสตร์ชาวอังกฤษในปี 1970 ครับ
+
+เขาสร้างเกมนี้ขึ้นมาเพื่อเป็นตัวอย่างของ cellular automaton ซึ่งแสดงให้เห็นว่ากฎง่าย ๆ บางอย่างสามารถก่อให้เกิดพฤติกรรมที่ซับซ้อนและน่าสนใจได้
+
+Game of Life จึงเป็นหนึ่งในโมเดลสำคัญที่ช่วยให้นักวิทยาศาสตร์และนักคณิตศาสตร์เข้าใจเรื่อง emergence และ complex systems มากขึ้น
+
 ---
 
 ## The Rules
