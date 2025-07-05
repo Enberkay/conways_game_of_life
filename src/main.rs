@@ -325,7 +325,8 @@ async fn choose_pattern() -> Option<usize> {
                 WHITE,
             );
         }
-        draw_text("Enter to start | Esc to go back", 20.0, 270.0, 25.0, GREEN);
+        draw_text("Enter to start | Esc to go back", 20.0, 400.0, 25.0, GREEN);
+
         if is_key_pressed(KeyCode::Up) {
             selected = (selected + pattern_names.len() - 1) % pattern_names.len();
         }
