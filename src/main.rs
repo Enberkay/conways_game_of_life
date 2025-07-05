@@ -65,13 +65,20 @@ impl GameOfLife {
         }
 
         for pos in candidates {
-            let neighbors = self.count_neighbors(&pos);
-            if self.is_alive(&pos) && (neighbors == 2 || neighbors == 3) {
-                new_set.insert(pos);
-            } else if !self.is_alive(&pos) && neighbors == 3 {
-                new_set.insert(pos);
-            }
+    // Skip if the cell is outside the visible simulation area
+        if pos.0 < 0 || pos.0 >= self.width || pos.1 < 0 || pos.1 >= self.height {
+            continue;
         }
+
+        let neighbors = self.count_neighbors(&pos);
+
+        if self.is_alive(&pos) && (neighbors == 2 || neighbors == 3) {
+            new_set.insert(pos);
+        } else if !self.is_alive(&pos) && neighbors == 3 {
+            new_set.insert(pos);
+        }
+    }
+
 
         self.live_cells = new_set;
         self.generation += 1;
