@@ -27,28 +27,45 @@ Game of Life จึงเป็นหนึ่งในโมเดลสำค�
 A small pattern of five live cells that moves diagonally across the board over time. The glider is a fundamental "spaceship" in the Game of Life, capable of transporting information and used as a building block in larger complex structures.
 
 ### 2. Random  
-A pattern where cells are initially placed randomly with a given density. This setup is useful for observing emergent behaviors and studying how chaos and order evolve in the system.
+Cells placed randomly with a specified density to observe emergent chaotic and ordered behaviors.
 
 ### 3. Block  
-A stable 2x2 square of live cells that does not change over time. It represents a simple still life pattern, useful as a fixed structure or memory in more complex configurations.
+A stable 2x2 square of live cells that remains unchanged, representing a simple still life.
 
 ### 4. Blinker  
-A line of three live cells that oscillates between horizontal and vertical orientation every generation. It is the simplest oscillator, demonstrating periodic behavior in the system.
+A line of three live cells that oscillates between horizontal and vertical every generation, the simplest oscillator.
 
 ### 5. Beacon  
-Consists of two adjacent 2x2 blocks that flash alternately. This oscillator shows how multiple stable groups can interact to create rhythmic behavior.
+Two adjacent 2x2 blocks that flash alternately, an oscillator showing rhythmic interaction.
+
+### 6. R-pentomino  
+A small initial pattern of five cells that evolves for a surprisingly long time before stabilizing, showing complex growth.
+
+### 7. Acorn  
+A sparse pattern of seven cells that evolves over thousands of generations into a large chaotic field, demonstrating long-term growth.
+
+### 8. Diehard  
+A pattern of seven cells that lasts for 130 generations before disappearing, illustrating transient complexity.
+
+### 9. Gosper Glider Gun  
+A famous pattern that periodically emits gliders indefinitely, the first known "gun" producing moving patterns.
+
+### 10. Pentadecathlon  
+An oscillator with a period of 15 generations, one of the longest-period simple oscillators.
 
 ---
 
 ## Why These Patterns Matter
 
-Conway's Game of Life is known to be Turing complete, which means it can simulate any computation given the right configuration of cells. The patterns above serve as fundamental components:
+Conway's Game of Life is known to be Turing complete, meaning it can simulate any computation given the right initial conditions. The patterns above serve as fundamental components:
 
-- **Gliders** can be thought of as signals transmitting information.  
-- **Still life patterns** like blocks serve as stable memory units.  
-- **Oscillators** like blinkers and beacons function as clocks or timing devices.
+- **Gliders** act as signals transmitting information across the grid.  
+- **Still life patterns** like blocks act as stable memory or static elements.  
+- **Oscillators** such as blinkers, beacons, and pentadecathlons serve as timing devices or clocks.  
+- **Spaceships and guns** (gliders, Gosper Glider Gun) enable construction of logic gates and complex machines.  
+- **Long-lived patterns** (R-pentomino, Acorn, Diehard) show how simple starts can generate complex and rich behavior.
 
-Understanding these simple patterns provides insight into how complex systems and computation can emerge from simple rules, highlighting the importance of cellular automata in fields like mathematics, computer science, and artificial life.
+Understanding these patterns helps us grasp how complexity and computation emerge from simple local rules, influencing fields like mathematics, computer science, physics, and artificial life.
 
 ---
 
@@ -57,23 +74,5 @@ Understanding these simple patterns provides insight into how complex systems an
 - Arrow keys (↑ / ↓) to navigate menus  
 - Enter to confirm selection  
 - Escape to go back or cancel
-
----
-
-## Features
-
-- Selectable screen resolution  
-- Multiple simulation patterns  
-- Bounded simulation area  
-- Generation and FPS display  
-
----
-
-## Future Plans
-
-- Pause and resume functionality  
-- Mouse interaction to toggle cells  
-- Pattern import and export  
-- Wrap-around (toroidal) board mode  
 
 ---
